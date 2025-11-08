@@ -2,9 +2,12 @@
 
 @font-face {
   font-family: "rockstar";
-  src: url("/rockstar.otf");
+  src: url("./rockstar.otf");
 }
 
-html {
+html,
+body {
   font-family: "rockstar";
+  width: 100%;
+  height: 100%;
 }
