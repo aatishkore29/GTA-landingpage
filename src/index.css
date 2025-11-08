@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "rockstar";
+  src: url("/rockstar.otf");
+}
+
+html {
+  font-family: "rockstar";
+}
