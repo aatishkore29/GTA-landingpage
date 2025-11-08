@@ -30,6 +30,24 @@ const App = () => {
       },
     });
   });
+
+  useGSAP(() => {
+    const main = document.querySelector(".main");
+    if (main) {
+      main.addEventListener("mousemove", (e) => {
+        const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
+        gsap.to(".main .text", {
+          x: `${xMove * 0.4}%`,
+        });
+        gsap.to(".sky", {
+          x: xMove,
+        });
+        gsap.to(".bg", {
+          x: xMove * 1.7,
+        });
+      });
+    }
+  }, [showContent]);
   return (
     <>
       <div className="svg flex items-center justify-center fixed top-0 left-0 z-100 w-full h-screen overflow-hidden bg-black">
@@ -76,16 +94,16 @@ const App = () => {
                 </h3>
               </div>
             </div>
-            <div className="imagesdiv w-full h-screen relative bg-emerald-500 overflow-hidden">
+            <div className="imagesdiv w-full h-screen relative overflow-hidden">
               <img
                 src="/sky.png"
                 alt=""
-                className="sky w-full h-full object-cover absolute top-0 left-0"
+                className="sky w-full h-full object-cover absolute top-0 left-0 scale-[1.3]"
               />
               <img
                 src="/bg.png"
                 alt=""
-                className="bg w-full h-full object-cover absolute top-0 left-0"
+                className="bg w-full h-full object-cover absolute top-0 left-0 scale-[1.1]"
               />
               <div className="text absolute top-20 left-1/2 -translate-x-1/2 text-white text-[8rem] flex flex-col gap-4">
                 <h1 className="-ml-40 leading-none ">grand</h1>
@@ -93,14 +111,14 @@ const App = () => {
                 <h1 className="-ml-40 leading-none ">auto</h1>
               </div>
               <img
-                src="/last.png"
+                src="/man1.png"
                 alt=""
                 className="char absolute bottom-0 left-1/2 -translate-x-[48%]"
               />
             </div>
-            <div className="btmbar w-full px-10 py-13 bg-linear-to-t from-black to-transparent absolute bottom-0 text-white">
+            <div className="btmbar w-full px-10 py-12 bg-linear-to-t from-black to-transparent absolute bottom-0 text-white">
               <div className="flex items-center gap-4 ">
-                <i class="ri-arrow-down-line text-4xl"></i>
+                <i className="ri-arrow-down-line text-4xl"></i>
                 <h3 className="font-[sans-serif] text-xl">Scroll Down</h3>
               </div>
               <img
@@ -108,6 +126,33 @@ const App = () => {
                 alt="ps5"
                 className="top-1/2 left-1/2 absolute -translate-1/2 h-[60px]"
               />
+            </div>
+          </div>
+          <div className="w-full h-screen bg-black flex items-center justify-center">
+            <div className="cntnr w-full h-[80%] flex text-white">
+              <div className="left relative w-1/2 h-full">
+                <img
+                  src="/latest.png"
+                  alt=""
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                />
+              </div>
+              <div className="right w-[30%] py-10">
+                <h1 className="text-8xl">Still running,</h1>
+                <h1 className="text-7xl">Not Hunting</h1>
+                <p className="text-xl font-[Helvetica_Now_Display] mt-10">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  quam libero natus inventore ullam molestias.
+                </p>
+                <p className="text-xl font-[Helvetica_Now_Display] mt-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus blanditiis iusto cumque sed, voluptas
+                  accusantium.
+                </p>
+                <button className="bg-yellow-500 px-10 py-5 rounded-xl text-black mt-10 text-4xl hover:scale-[1.1] transition duration-300">
+                  <a href="">Download Now</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
