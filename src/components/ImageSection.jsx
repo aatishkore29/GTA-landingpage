@@ -1,4 +1,3 @@
-
 const ImageSection = () => {
   return (
     <>
@@ -19,7 +18,7 @@ const ImageSection = () => {
           <h1 className="-ml-40 leading-none ">auto</h1>
         </div>
         <img
-          src="/girl10.png"
+          src="/girl2.png"
           alt=""
           className="char absolute bottom-[150%] left-1/2 -translate-x-[48%] scale-[4] rotate-15"
         />

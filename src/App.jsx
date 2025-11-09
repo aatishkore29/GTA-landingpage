@@ -58,7 +58,7 @@ const App = () => {
     });
     gsap.to(".char", {
       rotate: 0,
-      scale: 1.1,
+      scale: 1.2,
       bottom: "0",
       x: "-50%",
       duration: 2,
