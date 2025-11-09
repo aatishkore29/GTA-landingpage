@@ -132,9 +132,9 @@ const App = () => {
             <div className="cntnr w-full h-[80%] flex text-white">
               <div className="left relative w-1/2 h-full">
                 <img
-                  src="/latest.png"
+                  src="/man4.png"
                   alt=""
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-600 hover:scale-105 hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] rounded-2xl"
                 />
               </div>
               <div className="right w-[30%] py-10">
@@ -149,7 +149,7 @@ const App = () => {
                   Necessitatibus blanditiis iusto cumque sed, voluptas
                   accusantium.
                 </p>
-                <button className="bg-yellow-500 px-10 py-5 rounded-xl text-black mt-10 text-4xl hover:scale-[1.1] transition duration-300">
+                <button className="bg-yellow-500 px-10 py-5 rounded-xl text-black mt-10 text-4xl hover:scale-[1.1] transition duration-450">
                   <a href="">Download Now</a>
                 </button>
               </div>
