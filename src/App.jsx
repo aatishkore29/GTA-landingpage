@@ -58,7 +58,7 @@ const App = () => {
     gsap.to(".char", {
       rotate: 0,
       scale: 1.1,
-      bottom: "-10%",
+      bottom: "0",
       x: "-50%",
       duration: 2,
       delay: "-0.7",
@@ -147,11 +147,11 @@ const App = () => {
               />
               <div className="text absolute top-20 left-1/2 -translate-x-1/2 text-white text-[8rem] flex flex-col gap-4 rotate-[-10deg] scale-[1.3]">
                 <h1 className="-ml-40 leading-none ">grand</h1>
-                <h1 className="ml-20 leading-none ">theft</h1>
+                <h1 className="ml-40 leading-none ">theft</h1>
                 <h1 className="-ml-40 leading-none ">auto</h1>
               </div>
               <img
-                src="/man1.png"
+                src="/girl10.png"
                 alt=""
                 className="char absolute bottom-[150%] left-1/2 -translate-x-[48%] scale-[4] rotate-15"
               />
@@ -181,16 +181,21 @@ const App = () => {
                 <h1 className="text-8xl">Still running,</h1>
                 <h1 className="text-7xl">Not Hunting</h1>
                 <p className="text-xl font-[Helvetica_Now_Display] mt-10">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                  quam libero natus inventore ullam molestias.
+                  Dive into the sun-soaked streets of Vice City and the gritty
+                  underworld of Leonida. Two rebellious souls. One high-stakes
+                  score gone wrong. Every moment counts.
                 </p>
                 <p className="text-xl font-[Helvetica_Now_Display] mt-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Necessitatibus blanditiis iusto cumque sed, voluptas
-                  accusantium.
+                  Gear up. Get ready. The streets are watching.
                 </p>
                 <button className="bg-yellow-500 px-10 py-5 rounded-xl text-black mt-10 text-4xl hover:scale-[1.1] transition duration-450">
-                  <a href="">Download Now</a>
+                  <a
+                    href="https://www.rockstargames.com/VI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Download Now
+                  </a>
                 </button>
               </div>
             </div>
