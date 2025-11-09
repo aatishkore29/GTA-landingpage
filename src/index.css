@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "rockstar";
-  src: url("./rockstar.otf");
+  src: url("/fonts/rockstar.otf") format("opentype");
+  font-display: swap;
 }
 
 html,
